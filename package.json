@@ -9,6 +9,6 @@
     "lerna": "2.4.0"
   },
   "workspaces": [
-    "coffee-editor-extension", "browser-app", "electron-app"
+    "coffee-editor-extension", "coffee-workflow-analyzer", "browser-app", "electron-app"
   ]
 }

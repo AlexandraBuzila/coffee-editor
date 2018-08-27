@@ -7,23 +7,28 @@
     "@theia/filesystem": "latest",
     "@theia/workspace": "latest",
     "@theia/preferences": "latest",
-    "@theia/navigator": "latest",
     "@theia/process": "latest",
+    "@theia/navigator": "latest",
+    "@theia/editorconfig": "latest",
     "@theia/terminal": "latest",
     "@theia/editor": "latest",
     "@theia/languages": "latest",
+    "@theia/java": "latest",
     "@theia/markers": "latest",
     "@theia/monaco": "latest",
+    "@theia/mini-browser": "latest",
     "@theia/typescript": "latest",
     "@theia/messages": "latest",
-    "coffee-editor-extension": "1.0.0"
+    "@theia/outline-view": "latest",
+    "coffee-editor-extension": "1.0.0",
+    "coffee-workflow-analyzer": "0.0.0"
   },
   "devDependencies": {
     "@theia/cli": "latest"
   },
   "scripts": {
     "prepare": "theia build",
-    "start": "theia start",
+    "start": "theia start --WF_LSP=5007 --port=3000 --loglevel=debug --root-dir=../../rcp/examples/ ",
     "watch": "theia build --watch --mode development"
   },
   "theia": {
